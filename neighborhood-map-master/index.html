@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Neighborhood Map</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+  </head>
+  <body>
+    <nav class="topNavbar">
+      <div class="topNavbarTitle">Düsseldorf - Explore the Beautiful Restauraunts in Düsseldorf City!</div>
+      <p class="FoursquareText">Powered with Foursquare <a href="https://foursquare.com/"><img src="foursquare.jpg" class="foursquareImage" alt="Foursquare image"></a></p>
+        <input type="text" placeholder="Search" data-bind="textInput: searchItem">
+        <img src="search.png" alt="search Icon" class="magnifyingGlassIcon">
+    </nav>
+
+    <main>
+        <div id="map"></div>
+        <aside class="col-sm-3 col-sm-offset--1">
+          <div class="sideNavBar" data-bind="foreach: locationList">
+            <a class="list-group-item" data-bind="text: title, click: show"></a>
+          </div>
+        </aside>
+    </main>
+
+    <!-- Knockout.js -->
+    <script src="js/lib/knockout.min.js"></script>
+    <script src="js/location_data.js"></script>
+    <script src="js/main.js"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsHynIl16MoQjQSUdu6v4j3okicEKNJck&v=3&callback=initMap" onerror="googleMapsError()">
+    </script>
+  </body>
+</html>
