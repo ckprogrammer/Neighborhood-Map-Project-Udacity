@@ -1,6 +1,6 @@
 # Neighborhood Map Project
 #### By Clara Krafft
-## Link to my optimized webpage: https://ckprogrammer.github.io/Neighborhood-Map-Project/neighborhood-map-master/index.html.
+## Link to my optimized webpage: https://ckprogrammer.github.io/Neighborhood-Map-Project-Udacity/neighborhood-map-master/index.html.
 
 This is the Project of the Neighborhood Map from [Udacity's Front End Web Developer Program](https://eu.udacity.com/course/front-end-web-developer-nanodegree--nd001).
 
